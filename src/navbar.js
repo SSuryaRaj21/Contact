@@ -25,7 +25,7 @@ export default function Navbar(){
   
   </form>
       <div className="float-end">
-      <img src={Google_logo} className="g_logo"/>
+      <img src={Google_logo} className="g_logo y"/>
     </div>
 </nav>
         </div>
