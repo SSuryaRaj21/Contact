@@ -16,11 +16,15 @@ useEffect(()=>{
 },[])
 
 const del = (a)=>{
+   const conf = window.confirm("Are You Delete This Conatct");
+if(conf===true){
     axios.delete(`${API}/${a}`).then(()=>{
         axios.get(API).then((getvalue)=>{
             setname(getvalue.data);
     })
     })
+}
+
 }
 
 const edit= (a,b,c,d,e,f,g)=>{
@@ -47,8 +51,8 @@ const edit= (a,b,c,d,e,f,g)=>{
                  <td> <div class="dropdown">
                          <button class="dropbtn  ">:</button>
                          <div class="dropdown-content">
-                         <span  ><Link to={'/edit'}> <button className="button" onClick={()=>edit(mapValue.id,mapValue.fname,mapValue.lname,mapValue.Mail,mapValue.Phone,mapValue.DOB,mapValue.WebAdd)}>edit</button></Link></span>
-                         <span  > <button className="button" onClick={()=>del(mapValue.id)}>delete</button></span>
+                         <span  ><Link to={'/edit'}> <button className="button" onClick={()=>edit(mapValue.id,mapValue.fname,mapValue.lname,mapValue.Mail,mapValue.Phone,mapValue.DOB,mapValue.WebAdd)}>Edit</button></Link></span>
+                         <span  > <button className="button" onClick={()=>del(mapValue.id)}>Delete</button></span>
                         
   </div>
 </div>

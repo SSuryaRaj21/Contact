@@ -5,15 +5,14 @@ import Nopage from "./nopage";
 import Navbar from "./navbar";
 import View from "./view";
 import Edit from "./edit";
-import Sample from "./sample/sample";
-import Sidebar from "./sidebar";
-import Nithya from "./Nithya";
+ 
+ 
  
  export default function App(){
   return(
     <div className="container" >
       <Navbar></Navbar>
-      {/* <Sidebar></Sidebar>  */}
+    
        
     <BrowserRouter>
     <Routes>
@@ -27,7 +26,7 @@ import Nithya from "./Nithya";
     </BrowserRouter>
 
 
-    {/* <Sample/> */}
+ 
  
     </div>
   )

@@ -40,38 +40,40 @@ export default function Edit(){
     
     return(
         <div>
-            <h3>craete conatact</h3>
+            <center>
+            <h3>Update Conatct</h3>
 
-            <form className="w-50" onSubmit={handleclik}>
-            <table className=" table  ">
+<form className="w-50" onSubmit={handleclik}>
+<table className=" table  ">
 
-                <tr className=" " >               
-                <td><input type="text"  placeholder="firstname" className="form-control  mb-3"    value={firstname} onChange={(e)=>setname(e.target.value)}/></td>
-                               
-                </tr>
-                <tr>               
-                <td><input type="text"  placeholder="lastname" className="form-control mb-3" value={lastname} onChange={(e)=>setlastname(e.target.value)}/></td>                
-                </tr>
-                <tr>               
-                <td><input type="email"  placeholder="Sample@gmail.com" className="form-control mb-3" value={maile} onChange={(e)=>setemail(e.target.value)}/></td> 
+    <tr className=" " >               
+    <td><input type="text"  placeholder="firstname" className="form-control  mb-3"    value={firstname} onChange={(e)=>setname(e.target.value)}/></td>
+                   
+    </tr>
+    <tr>               
+    <td><input type="text"  placeholder="lastname" className="form-control mb-3" value={lastname} onChange={(e)=>setlastname(e.target.value)}/></td>                
+    </tr>
+    <tr>               
+    <td><input type="email"  placeholder="Sample@gmail.com" className="form-control mb-3" value={maile} onChange={(e)=>setemail(e.target.value)}/></td> 
 
-                </tr>
-                <tr>               
-                <td><input type="number"  placeholder="PhoneNumber" className="form-control mb-3" value={number} onChange={(e)=>setnumber(e.target.value)} /></td>                
-                </tr>
-                <tr>               
-                <td><input type="date"  placeholder="date" className="form-control mb-3" value={dob} onChange={(e)=>setdob(e.target.value)}/></td>                
-                </tr>
-                <tr>               
-                <td><input type="text"  placeholder="website" className="form-control mb-3" value={webname} onChange={(e)=>setweb(e.target.value)}/></td>                
-                </tr>
+    </tr>
+    <tr>               
+    <td><input type="number"  placeholder="PhoneNumber" className="form-control mb-3" value={number} onChange={(e)=>setnumber(e.target.value)} /></td>                
+    </tr>
+    <tr>               
+    <td><input type="date"  placeholder="date" className="form-control mb-3" value={dob} onChange={(e)=>setdob(e.target.value)}/></td>                
+    </tr>
+    <tr>               
+    <td><input type="text"  placeholder="website" className="form-control mb-3" value={webname} onChange={(e)=>setweb(e.target.value)}/></td>                
+    </tr>
 
-                <tr>               
-                <td><input type="submit"  value={'save'} className="  btn btn-info"/></td>                
-                </tr>
+    <tr>               
+    <td><input type="submit"  value={'Update'} className="  btn btn-info w-100"/></td>                
+    </tr>
 
-            </table>
-            </form>
+</table>
+</form>
+            </center>
         </div>
     )
 }
